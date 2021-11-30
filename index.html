@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Tippy JS -->
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h3>Text Editor</h3>
+        <br>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                    aria-controls="pills-home" aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                    aria-controls="pills-profile" aria-selected="false">Edit</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-views-tab" data-toggle="pill" href="#pills-views" role="tab"
+                    aria-controls="pills-profile" aria-selected="false">Views</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                    aria-controls="pills-contact" aria-selected="false">Insert</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="controls">
+                    <div class="dropdown">
+                        <button class="btn btn-light dropdown-toggle sbtn" type="button" id="heading-btn"
+                            data-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-magic"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">
+                                <h1>Header 1</h1>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <h2>Header 2</h2>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <h3>Header 3</h3>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <h4>Header 4</h4>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <h5>Header 5</h5>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <h6>Header 6</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-light dropdown-toggle sbtn" type="button" id="style-btn"
+                            data-toggle="dropdown" aria-expanded="false">
+                            Select Fonts
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">jetbrains mono</a>
+                            <a class="dropdown-item" href="#">sf mono</a>
+                            <a class="dropdown-item" href="#">hack</a>
+                            <a class="dropdown-item" href="#">arial</a>
+                            <a class="dropdown-item" href="#">ubuntu mono</a>
+                            <a class="dropdown-item" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="btn-group sbtn" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-light rbtn" id="bold-btn"><i
+                                class="bi bi-type-bold"></i></button>
+                        <button type="button" class="btn btn-light rbtn" id="italic-btn"><i
+                                class="bi bi-type-italic"></i></button>
+                        <button type="button" class="btn btn-light" id="underline-btn"><i
+                                class="bi bi-type-underline"></i></button>
+                        <button type="button" class="btn btn-light" id="strike-btn"><i
+                                class="bi bi-type-strikethrough"></i></button>
+                        <button type="button" class="btn btn-light" id="quote-btn"><i class="bi bi-quote"></i></button>
+                        <button type="button" class="btn btn-light" id="paragraph-btn"><i
+                                class="bi bi-paragraph"></i></button>
+                    </div>
+                    <div class="btn-group sbtn" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-light rbtn" id="superscript-btn"><img src="superscript.svg"
+                                alt=""></button>
+                        <button type="button" class="btn btn-light rbtn" id="subscript-btn"><img src="subscript.svg"
+                                alt=""></button>
+                    </div>
+                    <div class="btn-group sbtn" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-light rbtn" id="ul-btn"><i
+                                class="bi bi-list-ul"></i></button>
+                        <button type="button" class="btn btn-light rbtn" id="ol-btn"><i
+                                class="bi bi-list-ol"></i></button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-light dropdown-toggle sbtn" type="button" id="color-btn"
+                            data-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-paint-bucket"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#"><input type="color" class="btn btn-light cbtn"
+                                    id="forcolor-btn"></a>
+                            <a class="dropdown-item" href="#"><input type="color" class="btn btn-light cbtn"
+                                    id="backcolor-btn"></a>
+                        </div>
+                    </div>
+                    <div class="btn-group sbtn" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-light" id="justify-left"><i
+                                class="bi bi-text-left"></i></button>
+                        <button type="button" class="btn btn-light" id="justify-center"><i
+                                class="bi bi-text-center"></i></button>
+                        <button type="button" class="btn btn-light" id="justify-right"><i
+                                class="bi bi-text-right"></i></button>
+                        <button type="button" class="btn btn-light" id="justify-full"><i
+                                class="bi bi-justify"></i></button>
+                    </div>
+                    <div class="btn-group sbtn" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-light" id="indent-left"><i
+                                class="bi bi-text-indent-right"></i></button>
+                        <button type="button" class="btn btn-light" id="indent-right"><i
+                                class="bi bi-text-indent-left"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="controls">
+                    <div class="btn-group sbtn" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-light rbtn" id="cut-btn"><i
+                                class="bi bi-scissors"></i></button>
+                        <button type="button" class="btn btn-light" id="copy-btn"><i
+                                class="bi bi-clipboard-plus"></i></button>
+                        <button type="button" class="btn btn-light rbtn" id="git"><i
+                                class="bi bi-clipboard"></i></button>
+                    </div>
+                    <div class="btn-group sbtn" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-light rbtn" id="undo-btn"><i
+                                class="bi bi-arrow-counterclockwise"></i></button>
+                        <button type="button" class="btn btn-light" id="redo-btn"><i
+                                class="bi bi-arrow-clockwise"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-views" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <div class="controls">
+                    <div class="btn-group sbtn" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-light"><i class="bi bi-fullscreen"></i></button>
+                        <button type="button" class="btn btn-light"><i class="bi bi-code-slash"></i></button>
+                        <button type="button" class="btn btn-light"><i class="bi bi-question-lg"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <div class="controls">
+                    <div class="dropdown">
+                        <button class="btn btn-light dropdown-toggle sbtn" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-table"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        </div>
+                    </div>
+                    <div class="btn-group sbtn" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-light"><i class="bi bi-link"></i></button>
+                        <button type="button" class="btn btn-light"><i class="bi bi-image"></i></button>
+                        <button type="button" class="btn btn-light"><i class="bi bi-camera-video"></i></button>
+                        <button type="button" class="btn btn-light"><i class="bi bi-music-note-beamed"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Textarea -->
+        <div id="editor" contenteditable="true"></div>
+    </div>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+    </script>
+    <!-- Tippy JS -->
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script src="tooltip.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
