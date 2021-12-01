@@ -114,3 +114,90 @@ tippy("#indent-right", {
   theme: "my-theme",
   arrow: false,
 });
+
+
+//Edit
+tippy("#cut-btn", {
+  content: "Cut",
+  placement: "bottom",
+  theme: "my-theme",
+  arrow: false,
+});
+tippy("#copy-btn", {
+  content: "Copy",
+  placement: "bottom",
+  theme: "my-theme",
+  arrow: false,
+});
+tippy("#pest-btn", {
+  content: "Paste",
+  placement: "bottom",
+  theme: "my-theme",
+  arrow: false,
+});
+tippy("#undo-btn", {
+  content: "Undo",
+  placement: "bottom",
+  theme: "my-theme",
+  arrow: false,
+});
+tippy("#redo-btn", {
+  content: "Redo",
+  placement: "bottom",
+  theme: "my-theme",
+  arrow: false,
+});
+
+
+//Views
+tippy("#fullscreen-btn", {
+  content: "Full Screen",
+  placement: "bottom",
+  theme: "my-theme",
+  arrow: false,
+});
+tippy("#codeview-btn", {
+  content: "Code View",
+  placement: "bottom",
+  theme: "my-theme",
+  arrow: false,
+});
+tippy("#help-btn", {
+  content: "Help",
+  placement: "bottom",
+  theme: "my-theme",
+  arrow: false,
+});
+
+
+// Insert
+tippy("#table-btn", {
+  content: "Insert Table",
+  placement: "bottom",
+  theme: "my-theme",
+  arrow: false,
+});
+tippy("#link-btn", {
+  content: "Insert Link",
+  placement: "bottom",
+  theme: "my-theme",
+  arrow: false,
+});
+tippy("#img-btn", {
+  content: "Insert Image",
+  placement: "bottom",
+  theme: "my-theme",
+  arrow: false,
+});
+tippy("#video-btn", {
+  content: "Insert Video",
+  placement: "bottom",
+  theme: "my-theme",
+  arrow: false,
+});
+tippy("#audio-btn", {
+  content: "Insert Audio",
+  placement: "bottom",
+  theme: "my-theme",
+  arrow: false,
+});

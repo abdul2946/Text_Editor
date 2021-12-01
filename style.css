@@ -1,5 +1,16 @@
+body{
+    font-family: sf mono;
+}
+
 .controls {
     display: flex;
+}
+
+.control-center{
+    background-color: #FBF3E4;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 0 0 17px rgba(0, 0, 0, 0.5);   
 }
 
 .container {
@@ -38,8 +49,11 @@
     margin: 0;
 }
 
+
 /* Tippy Js Custom Theme */
 .tippy-box[data-theme~='my-theme'] {
-    background-color: rgb(36, 240, 240,0.3);
-    color:black;
+    background-color: white;
+    box-shadow: 0 0 17px rgba(0, 0, 0, 0.5);
+    font-family: sf mono;
+    color:#FF87CA;
 }

@@ -110,3 +110,14 @@ redobtn.addEventListener("click", () => {
 
 
 // Insert Section
+const linkbtn = document.querySelector("#link-btn");
+const imgbtn = document.querySelector("#img-btn");
+const videobtn = document.querySelector("#video-btn");
+const audiobtn = document.querySelector("#audio-btn");
+
+linkbtn.addEventListener("click", () => {
+  document.execCommand("createLink");
+});
+imgbtn.addEventListener("click", () => {
+  document.execCommand("insertImage");
+});
