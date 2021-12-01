@@ -4,6 +4,7 @@ body{
 
 .controls {
     display: flex;
+    width:95%;
 }
 
 .control-center{
@@ -21,7 +22,7 @@ body{
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
     border-radius: 3px;
     margin: 5px;
-    height: 45px;
+    height: 35px;
 }
 
 .aligntext {
@@ -30,6 +31,9 @@ body{
 .ibtn {
     border-radius: 0;
     height: 100%;
+}
+#Alignment-menu{
+    display: flex;
 }
 #editor {
     padding: 20px;

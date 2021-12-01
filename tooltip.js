@@ -78,6 +78,12 @@ tippy("#color-btn", {
   theme: "my-theme",
   arrow: false,
 });
+tippy("#list-btn", {
+  content: "Text Alignment",
+  placement: "bottom",
+  theme: "my-theme",
+  arrow: false,
+});
 tippy("#justify-left", {
   content: "justify Left",
   placement: "bottom",
