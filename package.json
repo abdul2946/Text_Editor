@@ -1,0 +1,19 @@
+{
+  "name": "text_editor3",
+  "version": "1.0.0",
+  "description": "This is a Text Editor Project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdul2946/Text_Editor.git"
+  },
+  "author": "Abdul Azim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdul2946/Text_Editor/issues"
+  },
+  "homepage": "https://github.com/abdul2946/Text_Editor#readme"
+}

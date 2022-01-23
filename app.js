@@ -22,7 +22,7 @@ underlinebtn.addEventListener("click", () => {
 strikebtn.addEventListener("click", () => {
   document.execCommand("strikeThrough");
 });
-quotebtn.addEventListener("click", () => {});
+quotebtn.addEventListener("click", () => { });
 paragraphbtn.addEventListener("click", () => {
   document.execCommand("insertParagraph");
 });
